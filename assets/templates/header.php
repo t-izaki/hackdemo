@@ -5,7 +5,7 @@
 
 <?php
 if (isset($_SESSION['latest_sql'])) {
-    echo "最後に実行されたクエリ: " . $_SESSION['latest_sql'];
+    echo "最後に実行されたクエリ: " . htmlspecialchars($_SESSION['latest_sql']);
 }?>
 
 <div class="container-fluid mb-30">
